@@ -1,0 +1,14 @@
+.app-bg {
+  background-image: linear-gradient(to right, #BA2F39, #763681);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boards-continer {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  width: 70%;
+}
