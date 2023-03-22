@@ -6,9 +6,24 @@
   align-items: center;
 }
 
-.boards-continer {
+.boards-container {
   display: flex;
   flex-direction: row;
   height: 60%;
-  width: 70%;
+  width: 80%;
+  position: relative;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 10rem;
+  height: 100%;
+  top: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  box-sizing: border-box;
+  left: calc(50% - 5rem);
 }

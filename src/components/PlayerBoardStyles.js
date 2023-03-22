@@ -41,7 +41,7 @@ export const CurrentScoreContainer = styled.div`
       ? ACTIVE_PLAYER_CURRENT_SCORE_BG_COLOR
       : INACTIVE_PLAYER_CURRENT_SCORE_BG_COLOR};
   width: 50%;
-  height: 7rem;
+  height: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
