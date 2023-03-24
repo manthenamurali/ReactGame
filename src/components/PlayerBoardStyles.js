@@ -30,7 +30,7 @@ export const PlayerName = styled.p`
 `;
 
 export const PlayerScore = styled.p`
-  color: #c2788e;
+  color: #c7365f;
   font-size: 5rem;
   margin-top: 2rem;
 `;

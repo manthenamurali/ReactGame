@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-const CustomStyledButton = ({ className, children }) => (
-  <button className={className}>{children}</button>
-);
-
-export const CustButton = styled(CustomStyledButton)`
+export const CustButton = styled.button`
   border-radius: 2rem;
   background-color: #f0dee4;
   text-transform: uppercase;

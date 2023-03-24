@@ -23,7 +23,9 @@ function PlayerBoard(props) {
       </PlayerScore>
       <CurrentScoreContainer isActivePlayer={isActivePlayer}>
         <CurrentTitle isActivePlayer={isActivePlayer}>Current</CurrentTitle>
-        <CurrentScore isActivePlayer={isActivePlayer}>0</CurrentScore>
+        <CurrentScore isActivePlayer={isActivePlayer}>
+          {props.currentscore}
+        </CurrentScore>
       </CurrentScoreContainer>
     </BoardContainer>
   );
