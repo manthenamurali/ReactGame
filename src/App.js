@@ -2,6 +2,7 @@ import "./App.css";
 import PlayerBoard from "./components/PlayerBoard";
 import { useState } from "react";
 import CustomButton from "./components/CustomButton";
+import { WIN_SCORE } from "./utils/Constants";
 
 function App() {
   const [currentPlayer, setCurrentPlayer] = useState(0);
@@ -22,13 +23,20 @@ function App() {
     }
   };
 
+  console.log(`player1Score = ${player1Score} player2Score = ${player2Score}`);
+  if (player1Score >= WIN_SCORE) {
+    alert("Player 1 won!!!");
+  } else if (player2Score >= WIN_SCORE) {
+    alert("Player 2 won!!!");
+  }
+
   const holdHandler = () => {
-    console.log(`Hold ${currentPlayer} score ${currentPlayerCurrentScore}`);
     if (currentPlayer == 0) {
-      setPlayer1Score(player1Score + currentPlayerCurrentScore);
+      setPlayer1Score((prevScore) => prevScore + currentPlayerCurrentScore);
     } else {
-      setPlayer2Score(player2Score + currentPlayerCurrentScore);
+      setPlayer2Score((prevScore) => prevScore + currentPlayerCurrentScore);
     }
+
     setCurrentPlayer(currentPlayer === 0 ? 1 : 0);
     setCurrentPlayerCurrentScore(0);
   };
@@ -57,12 +65,12 @@ function App() {
           isActivePlayer={currentPlayer === 1}
         ></PlayerBoard>
         <div className="options-container">
-          <CustomButton onClick={newgameHandler}>New Game</CustomButton>
+          <CustomButton onClick={newgameHandler}>🔄 New game</CustomButton>
           <CustomButton className="btn__roll-dice" onClick={rollDiceHandler}>
-            Roll Dice
+            🎲 Roll dice
           </CustomButton>
           <CustomButton onClick={holdHandler} className="btn__hold">
-            Hold
+            📥 Hold
           </CustomButton>
         </div>
       </div>

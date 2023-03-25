@@ -20,13 +20,13 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  width: 10rem;
+  width: 12rem;
   height: 100%;
   top: 0rem;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 5.5rem;
   box-sizing: border-box;
-  left: calc(50% - 5rem);
+  left: calc(50% - 6rem);
 }
 
 .btn__roll-dice {
@@ -34,5 +34,5 @@
 }
 
 .btn__hold {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
