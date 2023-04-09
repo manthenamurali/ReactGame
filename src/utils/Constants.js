@@ -7,4 +7,4 @@ export const INACTIVE_PLAYER_CURRENT_SCORE_BG_COLOR = "#C4436B";
 export const ACTIVE_CURRENT_SCORE_COLOR = "#FFFFFF";
 export const INACTIVE_CURRENT_SCORE_COLOR = "#EFE4EC";
 
-export const WIN_SCORE = 50;
+export const WIN_SCORE = 100;

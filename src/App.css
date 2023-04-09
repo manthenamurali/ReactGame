@@ -36,3 +36,9 @@
 .btn__hold {
   margin-top: 1.5rem;
 }
+
+.toggle-theme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
